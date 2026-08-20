@@ -1,14 +1,21 @@
 {
   "name": "backend-system-for-a-virtual-event-management-platform",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Backend API for a virtual event management platform with authentication, organizer workflows, and attendee registration.",
+  "main": "server.js",
   "scripts": {
     "test": "jest --runInBand",
     "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "express",
+    "event-management",
+    "jwt",
+    "authentication",
+    "nodejs",
+    "backend"
+  ],
+  "author": "shubham-bawane",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^3.0.3",
