@@ -64,7 +64,7 @@ describe('Virtual Event Management API', () => {
     const response = await request(app)
       .post('/events')
       .set('Authorization', `Bearer ${organizerToken}`)
-      .send({ title: '', description: 'Missing required fields', date: '', time: '' })
+      .send({ title: '', description: 'Missing required fields', date: '', time: '', capacity: '', duration: '' })
       .expect(400);
 
     expect(response.body.message).toBeTruthy();
@@ -78,7 +78,9 @@ describe('Virtual Event Management API', () => {
         title: 'Tech Conference',
         description: 'Annual virtual meetup',
         date: '2026-09-15',
-        time: '18:00'
+        time: '18:00',
+        capacity: 100,
+        duration: 120
       })
       .expect(201);
 
